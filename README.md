@@ -1,2 +1,2 @@
 # master-templates
-This repository contains document templates to be used by students of the Master in Electronics program, from the Instituto Tecnológico de Costa Rica.
+This repository contains templates for documents to be used by students of the Master's Program in Electronics Engineering, from the Instituto Tecnológico de Costa Rica.
