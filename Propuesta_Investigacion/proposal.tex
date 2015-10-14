@@ -1,0 +1,112 @@
+%% ---------------------------------------------------------------------------
+%% proposal.tex
+%%
+%% Research Proposal, main document.
+%%
+%% ---------------------------------------------------------------------------
+\documentclass[12pt,letterpaper]{article}
+\usepackage[english]{babel}     % supports english, but default is
+% include this if you want to import graphics files with /includegraphics
+\usepackage{anysize}
+\marginsize{2.5cm}{2.5cm}{1cm}{1cm}
+\usepackage{textcomp}
+\usepackage{url}
+\bibliographystyle{unsrt}
+\usepackage{graphics}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{slashbox}
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+
+\definecolor{dblue}{RGB}{0,102,153}
+\newcommand{\dB}[1]{\textcolor{dblue}{\textbf{#1}}}
+
+\usepackage{longtable}
+\usepackage{ifpdf}
+
+\setlength{\parskip}{1em}
+
+% Nombre del Estudiante
+\newcommand{\scriptAuthor}{Nombre Apellido}
+
+% Tí­tulo de la tesis
+\newcommand{\scriptTitle}{Tentative Title} 
+
+
+% Keywords
+\newcommand{\scriptKeywords}{key, words, ...}
+
+% Para el PDF (cambiar si se desea otras cosas a lo indicado arriba
+\newcommand{\pdfAuthor}{\scriptAuthor}
+\newcommand{\pdfTitle}{\scriptTitle} 
+\newcommand{\pdfKeywords}{\scriptKeywords}
+
+
+\begin{document}
+ 
+ \graphicspath{{./}{./fig/}}
+
+ \input{./titlepage.tex}
+
+%  \tableofcontents
+
+ \clearpage
+
+% Definir Director de tesis (profesor asesor) 
+\section{Director}
+Jorge Castro-Godínez, M.Sc.
+%
+
+
+% Título de la investigación
+\section{Tentative Title}
+\scriptTitle
+%
+
+
+% Marco Teórico
+% Estado del arte del tema de investigación
+\section{Background and Related Work}
+Example of a reference \cite{Venkataramani15_DAC}.
+%
+
+
+
+% Objetivo general de la investigación
+% Objetivos específicos de la investigación
+\section{Objectives}
+%
+\subsection{General}
+
+\subsection{Specific}
+%
+
+
+
+% Factibilidad técnica del proyecto
+\section{Technical Feasibility}
+%
+
+
+
+% Propuesta inicial de metodología de investigación
+\section{Proposed Methodology}
+%
+
+
+% Cronograma de trabajo
+\section{Work Schedule}
+%
+
+% Referencias del Background y el Related Work
+\bibliographystyle{sty/plainurl}
+\bibliography{references}
+
+
+
+\end{document}
+
